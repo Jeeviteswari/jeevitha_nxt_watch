@@ -6,9 +6,10 @@ const ErrorImage = props => (
   <AppTheme.Consumer>
     {value => {
       const {activeTheme} = value
+      const {refresh} = props
 
       const refreshPage = () => {
-        props.refresh()
+        refresh()
       }
 
       return (
